@@ -32,29 +32,35 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/index.html"><img src="./images/logo.svg" alt="логотип" /></a>
-        <ul>
-          <li><a href="/">Про нас</a></li>
-          <li><a href="/">Послуги та ціни</a></li>
-          <li><a href="/">Перукарі</a></li>
-          <li><a href="/">Contacts</a></li>
-        </ul> 
+    <header class="header">
+      <nav class="header-navigation">
+        <a href="/index.html" class="header-logo"><img src="./images/logo.svg" alt="логотип" /></a>
+        <ul class="header-list list">
+          <li class="header-item"><a href="/" class="header-link link">Про нас</a></li>
+          <li class="header-item"><a href="/" class="header-link link">Послуги та ціни</a></li>
+          <li class="header-item"><a href="/" class="header-link link">Перукарі</a></li>
+          <li class="header-item"><a href="/" class="header-link link">Contacts</a></li>
+        </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Онлайн-бронювання</button>
+      <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
+      <button type="button" class="header-btn">Онлайн-бронювання</button>
     </header>
     <main>
-      <section>
+      <section class="hero">
         <div>
-          <ul>
-            <li>
+          <ul class="hero-list">
+            <li class="hero-item">
               <a
-                href="/"
+                href="/" class="hero-link"
                 lang="en"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -63,7 +69,7 @@
             </li>
             <li>
               <a
-                href="/"
+                href="/" class="hero-link"
                 lang="en"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -73,9 +79,9 @@
           </ul>
         </div>
         <div>
-          <p>Чоловіча перукарня в Києві</p>
-          <h1 lang="en">BarberShop</h1>
-          <p>
+          <p class="hero-subtitle">Чоловіча перукарня в Києві</p>
+          <h1 lang="en" class="hero-title">BarberShop</h1>
+          <p class="hero-description">
             Ми є експертами в модних чоловічих стрижках. Працюємо швидко,
             акуратно та стильно.
           </p>
