@@ -1,3 +1,32 @@
+:root {
+  --main-title-color: #ffffff;
+  --secondary-title-color: #303030;
+  --accent-color: #ff6c00;
+  --secondaty-font: 'Raleway', sans-serif;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.title {
+  /* ?????????? */
+}
+.subtitle {
+  /* ??????? */
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -10,20 +39,11 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-}
 
-/* HEADER */
+/* --------------HEADER-------------- */
 
 .header {
-  background-color: bisque;
+  background-color: rgb(220, 217, 214);
 }
 .header-navigation {
 }
@@ -38,6 +58,10 @@ body {
   letter-spacing: 0.1em;
   color: #ffffff;
 }
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
 .header-tel {
   font-weight: 600;
   font-size: 12px;
@@ -48,27 +72,251 @@ body {
 }
 .header-btn {
   font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: #ffffff;
 }
 
-/* HERO */
+/* -----------HERO----------- */
 
 .hero {
+  background-color: rgb(220, 217, 214);
 }
 .hero-list {
 }
 .hero-item {
 }
 .hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--secondary-title-color);
+}
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
 }
 .hero-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--main-title-color);
 }
 .hero-description {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* ----------ABOUT--------- */
+
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+.about-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--secondary-title-color);
+}
+.about-description {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-description-two {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-btn {
+  color: #303030;
+}
+
+/* -----------PRICES---------- */
+
+.prices {
+}
+.prices-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: var(--main-title-color);
+}
+.prices-list {
+}
+
+.prices-item {
+}
+.prices-item-text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.prices-btn {
+  color: #ffffff;
+}
+
+/* -----------Benefits----------- */
+
+.benefits {
+}
+.benefits-list {
+}
+
+.benefits-item > span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.33;
+  text-align: center;
+  color: #303030;
+}
+.benefits-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: #303030;
+}
+.benefits-title {
+  font-family: var(--secondaty-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--secondary-title-color);
+}
+.benefits-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* ----------Barbers-------- */
+
+.barbers {
+}
+.barbers-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #303030;
+}
+.barbers-title {
+  font-family: var(--secondaty-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: var(--secondary-title-color);
+}
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-title-color);
+}
+.barbers-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* ----------Gallery--------- */
+
+.gallery {
+}
+.gallery-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+.gallery-list {
+}
+.gallery-item {
+}
+
+/* ----------Contact--------- */
+
+.contact {
+}
+.contact-title {
+  font-family: var(--secondaty-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--main-title-color);
+}
+.contact-address {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.contact-list {
+}
+.contact-item {
+}
+.contact-link {
+}
+.contact-subtitle {
+}
+.subtitle {
 }
