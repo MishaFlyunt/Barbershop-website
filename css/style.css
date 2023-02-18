@@ -1,6 +1,9 @@
 :root {
   --main-title-color: #ffffff;
-  --secondary-title-color: #303030;
+  --main-link-color: #ffffff;
+  --main-color-contact-footer-hero-description-prices-item: #9da4bd;
+  --main-color-benefits-barbers-subtitle-btn: #303030;
+  --secondary-title-description-about-benefits-color: #555555;
   --accent-color: #ff6c00;
   --secondaty-font: 'Raleway', sans-serif;
 }
@@ -21,11 +24,28 @@ body {
   text-transform: uppercase;
   cursor: pointer;
 }
+.header-link:hover,
+.header-link:focus,
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
 .title {
-  /* ?????????? */
+  font-family: var(--secondaty-font);
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
 }
 .subtitle {
-  /* ??????? */
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.description {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
 }
 .visually-hidden {
   position: absolute;
@@ -56,23 +76,20 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: var(--main-link-color);
 }
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
+
 .header-tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-link-color);
 }
 .header-btn {
   font-family: inherit;
-  color: #ffffff;
+  color: var(--main-link-color);
 }
 
 /* -----------HERO----------- */
@@ -89,17 +106,13 @@ body {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: var(--secondary-title-color);
+  color: var(--secondary-title-description-about-benefits-color);
 }
 .hero-link:hover,
 .hero-link:focus {
   color: var(--accent-color);
 }
 .hero-subtitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
@@ -110,10 +123,7 @@ body {
   color: var(--main-title-color);
 }
 .hero-description {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: #9da4bd;
+  color: var(--main-color-contact-footer-hero-description-prices-item);
 }
 
 /* ----------ABOUT--------- */
@@ -129,29 +139,22 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: var(--secondary-title-color);
+  color: var(--secondary-title-description-about-benefits-color);
 }
 .about-title {
-  font-family: 'Raleway', sans-serif;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: var(--secondary-title-color);
+  color: var(--secondary-title-description-about-benefits-color);
 }
 .about-description {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: #555555;
+  color:var(--secondary-title-description-about-benefits-color);
 }
 .about-description-two {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-  color: #555555;
+  color:var(--secondary-title-description-about-benefits-color);
 }
 .about-btn {
-  color: #303030;
+  color: var(--main-color-benefits-barbers-subtitle-btn);
 }
 
 /* -----------PRICES---------- */
@@ -159,18 +162,9 @@ body {
 .prices {
 }
 .prices-subtitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
 .prices-title {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
   color: var(--main-title-color);
 }
 .prices-list {
@@ -180,12 +174,12 @@ body {
 }
 .prices-item-text {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
-  color: #9da4bd;
+  color: var(--main-color-contact-footer-hero-description-prices-item);
 }
 .prices-btn {
-  color: #ffffff;
+  color: var(--main-link-color);
 }
 
 /* -----------Benefits----------- */
@@ -201,36 +195,23 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #303030;
+  color: var(--main-color-benefits-barbers-subtitle-btn);
 }
 .benefits-item-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.33;
   text-align: center;
-  color: #303030;
+  color: var(--main-color-benefits-barbers-subtitle-btn);
 }
 .benefits-subtitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.33;
-  text-transform: uppercase;
-  color: #303030;
+  color:var(--main-color-benefits-barbers-subtitle-btn);
 }
 .benefits-title {
-  font-family: var(--secondaty-font);
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
-  color: var(--secondary-title-color);
+  color: var(--secondary-title-description-about-benefits-color);
 }
 .benefits-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: #555555;
+  color:var(--secondary-title-description-about-benefits-color);
 }
 
 /* ----------Barbers-------- */
@@ -238,20 +219,10 @@ body {
 .barbers {
 }
 .barbers-subtitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #303030;
+  color: var(--main-color-benefits-barbers-subtitle-btn);
 }
 .barbers-title {
-  font-family: var(--secondaty-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
-  color: var(--secondary-title-color);
+  color: var(--secondary-title-description-about-benefits-color);
 }
 .barbers-list {
 }
@@ -263,10 +234,9 @@ body {
   line-height: 1.38;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--secondary-title-color);
+  color: var(--secondary-title-description-about-benefits-color);
 }
 .barbers-item-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.35;
   text-align: center;
@@ -279,11 +249,7 @@ body {
 .gallery {
 }
 .gallery-subtitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
-  color: var(--secondary-title-color);
+  color: var(--secondary-title-description-about-benefits-color);
 }
 .gallery-list {
 }
@@ -293,14 +259,9 @@ body {
 /* ----------Contact--------- */
 
 .contact {
+  background-color: rgb(212, 206, 206);
 }
 .contact-title {
-  font-family: var(--secondaty-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
   color: var(--main-title-color);
 }
 .contact-address {
@@ -308,15 +269,50 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: #9da4bd;
+  color: var(--main-color-contact-footer-hero-description-prices-item);
 }
 .contact-list {
 }
 .contact-item {
 }
+.contact-link-address {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--main-color-contact-footer-hero-description-prices-item);
+}
 .contact-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--main-color-contact-footer-hero-description-prices-item);
+}
+[href$='mailto:barbershop@email.com'] {
+  text-decoration-line: underline;
 }
 .contact-subtitle {
+  color: var(--main-title-color);
 }
-.subtitle {
+.contact-description {
+  color: var(--main-color-contact-footer-hero-description-prices-item);
+}
+
+/* ----------Form--------- */
+
+/* ----------Footer--------- */
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--main-color-contact-footer-hero-description-prices-item);
+}
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--main-color-benefits-barbers-subtitle-btn);
 }
