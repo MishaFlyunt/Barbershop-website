@@ -6,9 +6,32 @@
   --secondary-title-description-about-benefits-color: #555555;
   --accent-color: #ff6c00;
   --secondaty-font: 'Raleway', sans-serif;
+  --bacic-margin: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
 }
 body {
   font-family: 'Open Sans', sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 .list {
   list-style: none;
@@ -64,6 +87,8 @@ body {
 
 .header {
   background-color: rgb(220, 217, 214);
+
+  padding: 32px 0;
 }
 .header-navigation {
 }
@@ -114,6 +139,8 @@ body {
 }
 .hero-subtitle {
   color: rgba(157, 164, 189, 0.6);
+
+  margin-bottom: var(--bacic-margin);
 }
 .hero-title {
   font-family: 'Raleway', sans-serif;
@@ -121,14 +148,19 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
+
+  margin-bottom: var(--bacic-margin);
 }
 .hero-description {
   color: var(--main-color-contact-footer-hero-description-prices-item);
+
+  width: 360px;
 }
 
 /* ----------ABOUT--------- */
 
 .about {
+  padding: 120px 0;
 }
 .about-list {
 }
@@ -140,18 +172,26 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--secondary-title-description-about-benefits-color);
+
+  margin-bottom: 20px;
 }
 .about-title {
   color: var(--secondary-title-description-about-benefits-color);
+
+   margin-bottom: 20px;
 }
 .about-description {
-  color:var(--secondary-title-description-about-benefits-color);
+  color: var(--secondary-title-description-about-benefits-color);
+
+   margin-bottom: 20px;
 }
 .about-description-two {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-  color:var(--secondary-title-description-about-benefits-color);
+  color: var(--secondary-title-description-about-benefits-color);
+
+   margin-bottom: 42px;
 }
 .about-btn {
   color: var(--main-color-benefits-barbers-subtitle-btn);
@@ -160,17 +200,27 @@ body {
 /* -----------PRICES---------- */
 
 .prices {
+  padding: 120px 0;
 }
 .prices-subtitle {
   color: rgba(157, 164, 189, 0.6);
+
+  margin-bottom: var(--bacic-margin);
 }
 .prices-title {
   color: var(--main-title-color);
+
+  margin-bottom: var(--bacic-margin);
 }
 .prices-list {
+  padding: 30px 20px;
 }
 
 .prices-item {
+  
+}
+.prices-item:not(:last-child) {
+  margin-bottom: var(--bacic-margin);
 }
 .prices-item-text {
   font-size: 18px;
@@ -205,13 +255,13 @@ body {
   color: var(--main-color-benefits-barbers-subtitle-btn);
 }
 .benefits-subtitle {
-  color:var(--main-color-benefits-barbers-subtitle-btn);
+  color: var(--main-color-benefits-barbers-subtitle-btn);
 }
 .benefits-title {
   color: var(--secondary-title-description-about-benefits-color);
 }
 .benefits-description {
-  color:var(--secondary-title-description-about-benefits-color);
+  color: var(--secondary-title-description-about-benefits-color);
 }
 
 /* ----------Barbers-------- */

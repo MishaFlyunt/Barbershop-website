@@ -38,37 +38,45 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- /* --------------HEADER-------------- */ -->
     <header class="header">
-      <nav class="header-navigation">
-        <a href="/index.html" class="header-logo"
-          ><img src="./images/logo.svg" alt="логотип"
-        /></a>
-        <ul class="header-list list">
-          <li class="header-item">
-            <a href="/" class="header-link link">Про нас</a>
-          </li>
-          <li class="header-item">
-            <a href="/" class="header-link link">Послуги та ціни</a>
-          </li>
-          <li class="header-item">
-            <a href="/" class="header-link link">Перукарі</a>
-          </li>
-          <li class="header-item">
-            <a href="/" class="header-link link">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
-      <button type="button" class="header-btn btn">Онлайн-бронювання</button>
+      <div class="container">
+        <nav class="header-navigation">
+          <a href="/index.html" class="header-logo"
+            ><img src="./images/logo.svg" alt="логотип"
+          /></a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="/" class="header-link link">Про нас</a>
+            </li>
+            <li class="header-item">
+              <a href="/" class="header-link link">Послуги та ціни</a>
+            </li>
+            <li class="header-item">
+              <a href="/" class="header-link link">Перукарі</a>
+            </li>
+            <li class="header-item">
+              <a href="/" class="header-link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+380441111111" class="header-tel link"
+          >+38 044 111 11 11</a
+        >
+        <button type="button" class="header-btn btn">Онлайн-бронювання</button>
+      </div>
     </header>
     <main>
       <!-- /* -----------HERO----------- */ -->
       <section class="hero">
-        <div>
+        <div class="container">
           <ul class="hero-list list">
             <li class="hero-item">
               <a
@@ -91,8 +99,6 @@
               >
             </li>
           </ul>
-        </div>
-        <div>
           <p class="hero-subtitle subtitle">Чоловіча перукарня в Києві</p>
           <h1 lang="en" class="hero-title">BarberShop</h1>
           <p class="hero-description description">
@@ -103,84 +109,94 @@
       </section>
       <!-- /* ----------ABOUT--------- */ -->
       <section class="about">
-        <ul class="about-list list">
-          <li class="about-item">
-            <img
-              src="./images/img1.jpg"
-              alt="стрижка бороди"
-              width="270"
-              height="445"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/img2.jpg"
-              alt="стрижка голови"
-              width="270"
-              height="445"
-            />
-          </li>
-        </ul>
-        <div>
-          <p class="about-subtitle subtitle">Про нас</p>
-          <h2 class="about-title title">
-            Найкращий <span lang="en">BarberShop</span> у вашому місті
-          </h2>
-          <p class="about-description description">
-            Якщо ви хочете додати своєму іміджу впевненості, вам обов'язково
-            варто завітати до нас.
-          </p>
-          <p class="about-description-two">
-            Ми команда, яка ніколи не зупиняється на досягнутому та досягнутому
-             спраглий до змін. І коли ти потрапиш до рук нашого господаря,
-             ти вже ніколи не будеш колишнім. Ми — команда, яка завжди в активі
-             одній хвилі» з клієнтами. Тому ми завжди готові до
-             вдосконалюватися кожен, хто до нас приходить!
-          </p>
-          <button type="button" class="about-btn btn">Онлайн-бронювання</button>
+        <div class="container">
+          <ul class="about-list list">
+            <li class="about-item">
+              <img
+                src="./images/img1.jpg"
+                alt="стрижка бороди"
+                width="270"
+                height="445"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img2.jpg"
+                alt="стрижка голови"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
+          <div>
+            <p class="about-subtitle subtitle">Про нас</p>
+            <h2 class="about-title title">
+              Найкращий <span lang="en">BarberShop</span> у вашому місті
+            </h2>
+            <p class="about-description description">
+              Якщо ви хочете додати своєму іміджу впевненості, вам обов'язково
+              варто завітати до нас.
+            </p>
+            <p class="about-description-two">
+              Ми команда, яка ніколи не зупиняється на досягнутому та
+              досягнутому спраглий до змін. І коли ти потрапиш до рук нашого
+              господаря, ти вже ніколи не будеш колишнім. Ми — команда, яка
+              завжди в активі одній хвилі» з клієнтами. Тому ми завжди готові до
+              вдосконалюватися кожен, хто до нас приходить!
+            </p>
+            <button type="button" class="about-btn btn">
+              Онлайн-бронювання
+            </button>
+          </div>
         </div>
       </section>
       <!-- /* -----------PRICES---------- */ -->
       <section class="prices">
-        <p class="prices-subtitle subtitle">Проведіть час з найкращими майстрами</p>
-        <h2 class="prices-title title">Послуги та ціни</h2>
-        <ul class="prices-list list">
-          <li class="prices-item">
-            <p class="prices-item-text">Чоловіча стрижка</p>
-            <p class="prices-item-text">від 300 грн.</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-item-text">Стрижка бороди</p>
-            <p class="prices-item-text">від 300 грн.</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-item-text">Обрізка вусів</p>
-            <p class="prices-item-text">від 200 грн.</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-item-text">Гоління бритвою</p>
-            <p class="prices-item-text">від 200 грн.</p>
-          </li>
-        </ul>
-        <ul class="prices-list list">
-          <li class="prices-item">
-            <p class="prices-item-text">Стрижка стажера</p>
-            <p class="prices-item-text">від 50 грн.</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-item-text">Стрижка під насадку</p>
-            <p class="prices-item-text">від 200 грн.</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-item-text">Дитяча стрижка (0-12 років)</p>
-            <p class="prices-item-text">від 300 грн.</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-item-text">Камуфляж сивого волосся</p>
-            <p class="prices-item-text">від 200 грн.</p>
-          </li>
-        </ul>
-        <button type="button" class="prices-btn btn">Онлайн-бронювання</button>
+        <div class="container">
+          <p class="prices-subtitle subtitle">
+            Проведіть час з найкращими майстрами
+          </p>
+          <h2 class="prices-title title">Послуги та ціни</h2>
+          <ul class="prices-list list">
+            <li class="prices-item">
+              <p class="prices-item-text">Чоловіча стрижка</p>
+              <p class="prices-item-text">від 300 грн.</p>
+            </li>
+            <li class="prices-item">
+              <p class="prices-item-text">Стрижка бороди</p>
+              <p class="prices-item-text">від 300 грн.</p>
+            </li>
+            <li class="prices-item">
+              <p class="prices-item-text">Обрізка вусів</p>
+              <p class="prices-item-text">від 200 грн.</p>
+            </li>
+            <li class="prices-item">
+              <p class="prices-item-text">Гоління бритвою</p>
+              <p class="prices-item-text">від 200 грн.</p>
+            </li>
+          </ul>
+          <ul class="prices-list list">
+            <li class="prices-item">
+              <p class="prices-item-text">Стрижка стажера</p>
+              <p class="prices-item-text">від 50 грн.</p>
+            </li>
+            <li class="prices-item">
+              <p class="prices-item-text">Стрижка під насадку</p>
+              <p class="prices-item-text">від 200 грн.</p>
+            </li>
+            <li class="prices-item">
+              <p class="prices-item-text">Дитяча стрижка (0-12 років)</p>
+              <p class="prices-item-text">від 300 грн.</p>
+            </li>
+            <li class="prices-item">
+              <p class="prices-item-text">Камуфляж сивого волосся</p>
+              <p class="prices-item-text">від 200 грн.</p>
+            </li>
+          </ul>
+          <button type="button" class="prices-btn btn">
+            Онлайн-бронювання
+          </button>
+        </div>
       </section>
       <!-- /* -----------Benefits----------- */ -->
       <section class="benefits">
@@ -213,7 +229,9 @@
       </section>
       <!-- /* ----------Barbers-------- */ -->
       <section class="barbers">
-        <p class="barbers-subtitle subtitle">Для справжніх поціновувачів атмосфери</p>
+        <p class="barbers-subtitle subtitle">
+          Для справжніх поціновувачів атмосфери
+        </p>
         <h2 class="barbers-title title">Наші перукарі</h2>
         <ul class="barbers-list list">
           <li class="barbers-item">
