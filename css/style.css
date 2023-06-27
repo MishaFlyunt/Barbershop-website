@@ -113,27 +113,35 @@ body {
 /* --------------HEADER-------------- */
 
 .header {
-  background-color: rgb(220, 217, 214);
+  position: fixed;
+  top: 0;
+  left: 0;
 
   padding: 32px 0;
 }
+
 .header-container {
   display: flex;
   align-items: center;
 }
+
 .header-navigation {
   display: flex;
   align-items: center;
 }
+
 .header-logo {
   margin-right: 131px;
 }
+
 .header-list {
   display: flex;
   gap: 30px;
 }
+
 .header-item {
 }
+
 .header-link {
   padding: 20px 0;
 
@@ -142,6 +150,9 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--main-link-color);
+
+  position: relative;
+  transition: color 250ms linear;
 }
 
 .header-tel {
@@ -157,12 +168,29 @@ body {
   margin-left: auto;
   margin-right: 43px;
 }
+
 .header-btn {
   color: var(--main-link-color);
 }
+
 .header-btn:hover,
 .header-btn:focus {
   background-color: var(--accent-color);
+}
+
+.header-link.active{
+  color: var(--accent-color);
+}
+
+.header-link.active::after{
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-color);
+  display: block;
+
+  position: absolute;
+  bottom: 0;
 }
 
 /* -----------HERO----------- */
@@ -172,11 +200,39 @@ body {
 .hero-container {
   display: flex;
 }
+
 .hero-list {
   width: 100px;
+  display: flex;
+  gap: 30px;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  padding-top: 30px;
+
+  position: relative;
+  padding-left: 90px;
 }
+
+.hero-list::before{
+  color: '';
+  width: 60px;
+  height: 1px;
+  background-color: #000;
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  /* transform: translate(-50%, -50%); */
+  bottom: 7px;
+}
+.hero-list-wrap{
+  display: flex;
+  align-items: flex-end;
+}
+
 .hero-item {
 }
+
 .hero-link {
   font-weight: 600;
   font-size: 11px;
@@ -184,10 +240,12 @@ body {
   letter-spacing: 0.2em;
   color: var(--secondary-title-description-about-benefits-color);
 }
+
 .hero-link:hover,
 .hero-link:focus {
   color: var(--accent-color);
 }
+
 .hero-content {
   background-color: rgb(220, 217, 214);
   padding: 272px 100px 208px;
@@ -200,6 +258,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .hero-subtitle {
   color: rgba(157, 164, 189, 0.6);
 
@@ -215,6 +274,7 @@ body {
 
   margin-bottom: var(--bacic-margin);
 }
+
 .hero-description {
   color: var(--main-color-contact-footer-hero-description-prices-item);
 
@@ -380,9 +440,11 @@ body {
   line-height: 1.36;
   letter-spacing: 0.05em;
   color: var(--main-color-benefits-barbers-subtitle-btn);
-
+/* 
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; */
+
+  position: relative;
 }
 .benefits-item > span::after {
   content: '+';
@@ -390,6 +452,10 @@ body {
   font-size: 16px;
   line-height: calc(22 / 16);
   color: var(--accent-color);
+
+  position: absolute;
+  top:7;
+  right: -10px;
 }
 .benefits-item-text {
   font-weight: 600;
